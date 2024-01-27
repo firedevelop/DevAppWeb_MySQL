@@ -1,4 +1,6 @@
--- Active: 1706039929257@@127.0.0.1@3306
+-- Active: 1706165359677@@127.0.0.1@3306@test
+SELECT * FROM employees LIMIT 100
+
 -- GRANT OPTION -- Concede a otros usuarios los permisos que tiene el primer usuario.
 GRANT SELECT ON employees TO john WITH GRANT OPTION;
 

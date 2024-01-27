@@ -1,0 +1,39 @@
+-- Active: 1706263855272@@127.0.0.1@3306@test
+SHOW TABLES FROM test;
+USE TEST;
+SELECT * FROM MYSQL.USER;
+SHOW GRANTS;
+SHOW GRANTS FOR 'AA'@'localhost';
+FLUSH PRIVILEGES;
+SELECT USER();
+SELECT * FROM MYSQL.USER;
+CREATE USER 'BB'@'LOCALHOST' IDENTIFIED BY 'BB';
+DROP USER 'BB'@LOCALHOST;
+CREATE USER 'CC'@'LOCALHOST';
+SELECT * FROM MYSQL.USER;
+GRANT SELECT `employeeNumber` FROM employees;
+
+CREATE USER 'john'@'localhost'
+
+FROM 'john'@'localhost'
+
+CREATE USER 'john'@'localhost'
+
+CREATE USER 'john'@'localhost'
+
+FROM 'john'@'localhost'
+
+
+TO 'john'@'localhost'
+
+FROM 'john'@'localhost'
+
+SELECT 'john'@'localhost'
+
+TO 'john'@'localhost'
+
+FROM 'john'@'localhost'
+
+SELECT 'john'@'localhost'
+
+TO 'john'@'localhost'
