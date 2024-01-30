@@ -3,26 +3,25 @@ SHOW TABLES FROM test;  -- Show tables
 USE TEST;   -- use db test
 SELECT * FROM mysql.user;   -- Show users
 SHOW GRANTS;   -- Show Grants
-SHOW GRANTS FOR 'AA'@'localhost';
-FLUSH PRIVILEGES;º
+SHOW GRANTS FOR 'JOHN'@'localhost';
+FLUSH PRIVILEGES;
 SELECT USER();  -- Who I am
 CREATE USER 'AA'@'localhost' IDENTIFIED BY 'AA';
-DROP USER 'AA'@'localhost';
+DROP USER 'JOHN'@'localhost';
 SELECT * FROM employees ORDER BY `employeeNumber` ASC LIMIT 5;
-GRANT SELECT (employeeNumber,firstName) ON employees TO 'AA'@'localhost';
 SELECT `employeeNumber`, `firstName` FROM employees;    -- AA console
-GRANT SELECT, INSERT ON employees TO 'AA'@'localhost';
-REVOKE ALL PRIVILEGES ON test.employees FROM 'AA'@'localhost';
-REVOKE ALL PRIVILEGES ON test.orders FROM 'AA'@'localhost';
-REVOKE SELECT ON test.* FROM 'AA'@'localhost';
-REVOKE SELECT ON *.* FROM 'AA'@'localhost';
-REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'AA'@'localhost';
-REVOKE ALL PRIVILEGES ON *.* FROM 'AA'@'localhost';
-GRANT SELECT ON *.* TO 'AA'@'localhost';      -- Todas las tablas de todas las BBDD.
-GRANT SELECT ON test.* TO 'AA'@'localhost';   -- Todas las tablas de la BD test.
-GRANT SELECT ON test.employees TO 'AA'@'localhost';   -- Solamente a la tabla employees de la BBDD test.
-GRANT SELECT ON orders TO 'AA'@'localhost';
-SHOW GRANTS FOR 'AA'@'localhost';
+GRANT SELECT, INSERT ON employees TO 'JOHN'@'localhost';
+REVOKE ALL PRIVILEGES ON test.employees FROM 'JOHN'@'localhost';
+REVOKE ALL PRIVILEGES ON test.orders FROM 'JOHN'@'localhost';
+REVOKE SELECT ON test.* FROM 'JOHN'@'localhost';
+REVOKE SELECT ON *.* FROM 'JOHN'@'localhost';
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'JOHN'@'localhost';
+REVOKE ALL PRIVILEGES ON *.* FROM 'JOHN'@'localhost';
+GRANT SELECT ON *.* TO 'JOHN'@'localhost';      -- Todas las tablas de todas las BBDD.
+GRANT SELECT ON test.* TO 'JOHN'@'localhost';   -- Todas las tablas de la BD test.
+GRANT SELECT ON test.employees TO 'JOHN'@'localhost';   -- Solamente a la tabla employees de la BBDD test.
+GRANT SELECT ON orders TO 'JOHN'@'localhost';
+SHOW GRANTS FOR 'JOHN'@'localhost';
 ALTER USER 'AA'@'localhost' WITH MAX_QUERIES_PER_HOUR 3000;
 ALTER USER 'AA'@'localhost' WITH MAX_QUERIES_PER_HOUR 3;
 SELECT * FROM employees LIMIT 100

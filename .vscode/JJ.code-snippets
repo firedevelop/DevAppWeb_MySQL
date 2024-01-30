@@ -6,7 +6,7 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
 	// Placeholders with the same ids are connected.
 	// Example:
-	// "AA": {
+	// "Print to console": {
 	// 	"scope": "javascript,typescript",
 	// 	"prefix": "log",
 	// 	"body": [
@@ -15,10 +15,10 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"JOHN":{
-		"prefix":"JOHN",
+	"JJJ":{
+		"prefix":"JJJ",
 		"body":[
-			"'john'@'localhost'"
+			"'JOHN'@'localhost';"
 		],
 		"description": "john user mysql"
 		}
