@@ -1,0 +1,10 @@
+{
+//Remove parameter hint box
+"editor.parameterHints.enabled": false,
+
+//Disable hover
+"editor.hover.enabled": false,
+
+//Controls if quick suggestions should show up while typing
+"editor.quickSuggestions.enabled": false,
+}
